@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerdTech — Tecnologia para um rebanho mais produtivo</title>
+    <meta name="description" content="HerdTech tira o rebanho do caderno: cadastro de fazendas e animais, controle de vacinação e relatórios em um só lugar, feito para o pequeno produtor.">
+    <meta name="theme-color" content="#0B2540">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <!-- ===== CABEÇALHO ===== -->
+    <header class="topo" id="topo">
+        <div class="container topo-barra">
+            <a class="marca" href="#inicio" aria-label="HerdTech — início">
+                <img src="img/logo.png" alt="HerdTech — Tecnologia para um rebanho mais produtivo" width="150" height="101">
+            </a>
+
+            <button class="menu-botao" id="menu-botao" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="menu" id="menu" aria-label="Principal">
+                <a href="#problema">O problema</a>
+                <a href="#caso">Estudo de caso</a>
+                <a href="#solucao">A solução</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#equipe">Equipe</a>
+                <button class="btn btn-instalar" id="btn-instalar" hidden>Instalar app</button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="inicio">
+            <div class="container hero-grade">
+                <div class="hero-texto">
+                    <span class="selo">Tecnologia no campo</span>
+                    <h1>Tire o rebanho <span class="destaque">do caderno.</span></h1>
+                    <p class="hero-sub">
+                        Cadastro de fazendas e animais, controle de vacinação e relatórios
+                        em um único ambiente, feito para o <strong>pequeno produtor</strong>.
+                    </p>
+                    <div class="hero-botoes">
+                        <a class="btn btn-primario" href="#solucao">Conheça a solução</a>
+                        <a class="btn btn-contorno" href="#problema">Entenda o problema</a>
+                    </div>
+                </div>
+
+                <aside class="hero-cartao" aria-label="O contraste que motiva o projeto">
+                    <p class="cartao-rotulo">Um rebanho que vale</p>
+                    <p class="cartao-valor valor-alto">R$ 150 mil</p>
+                    <p class="cartao-rotulo">gerenciado num caderno de</p>
+                    <p class="cartao-valor valor-baixo">R$ 5</p>
+                    <p class="cartao-nota">Vacina, cio e lactação controlados de memória — e pagos caro, sem perceber.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ===== A DOR ===== -->
+        <section class="secao" id="problema">
+            <div class="container">
+                <span class="selo selo-verde">A dor</span>
+                <h2>Onde estamos: o coração do “Vale do Gado Jersey”</h2>
+                <p class="lead">
+                    Braço do Norte e Tubarão formam a 2ª maior bacia leiteira de Santa Catarina.
+                    Na nossa região está o maior rebanho Jersey da América do Sul, mas o pequeno
+                    produtor familiar ainda controla vacina, cio e lactação <strong>na memória</strong>.
+                </p>
+
+                <ul class="numeros">
+                    <li><strong data-contar="15" data-prefixo="+" data-sufixo=" mil">+15 mil</strong><span>animais Jersey, o maior rebanho da América do Sul</span></li>
+                    <li><strong>4ª</strong><span>maior produtor de leite do Brasil (3,2 bi de litros/ano em SC)</span></li>
+                    <li><strong data-contar="78" data-sufixo="%">78%</strong><span>das propriedades de SC são familiares</span></li>
+                    <li><strong data-contar="79" data-prefixo="~" data-sufixo=" mil">~79 mil</strong><span>produtores de bovinos em SC — metade sem gestão formal</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== ESTUDO DE CASO ===== -->
+        <section class="secao secao-clara" id="caso">
+            <div class="container">
+                <span class="selo selo-verde">Estudo de caso</span>
+                <h2>Sítio Boa Vista</h2>
+                <p class="lead">Propriedade familiar típica entre Braço do Norte e São Ludgero (SC).</p>
+
+                <div class="caso-grade">
+                    <div class="cartao">
+                        <h3>A propriedade</h3>
+                        <ul class="lista-fatos">
+                            <li><strong>18 hectares</strong>, produção de leite</li>
+                            <li><strong>32 bovinos</strong>, sendo 19 vacas em lactação</li>
+                            <li><strong>~310 litros</strong> de leite por dia</li>
+                            <li>Mão de obra: <strong>só a família</strong></li>
+                            <li>Controle: caderno, calendário na parede e memória</li>
+                        </ul>
+                    </div>
+
+                    <div class="cartao cartao-alerta">
+                        <h3>Diagnóstico em 1 ano</h3>
+                        <ul class="lista-fatos">
+                            <li><strong>2 vacinas de reforço</strong> atrasadas (+30 dias)</li>
+                            <li><strong>2 a 3 cios perdidos</strong> por falta de registro</li>
+                            <li>Cada cio perdido = <strong>parto adiado em 21 dias</strong></li>
+                            <li>≈ <strong>378 litros</strong> de leite que nunca serão produzidos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grafico" role="img" aria-label="Gráfico: prejuízo estimado de R$ 590 com 1 cio perdido, R$ 1.716 com 2 cios e R$ 2.300 com 3 cios">
+                    <h3>O prejuízo invisível</h3>
+                    <div class="barras">
+                        <div class="barra-item">
+                            <span class="barra-rotulo">1 cio perdido</span>
+                            <div class="barra-trilho"><div class="barra" data-valor="590" data-max="2300"></div></div>
+                            <span class="barra-valor">R$ 590</span>
+                        </div>
+                        <div class="barra-item">
+                            <span class="barra-rotulo">2 cios perdidos</span>
+                            <div class="barra-trilho"><div class="barra" data-valor="1716" data-max="2300"></div></div>
+                            <span class="barra-valor">R$ 1.716</span>
+                        </div>
+                        <div class="barra-item">
+                            <span class="barra-rotulo">3 cios perdidos</span>
+                            <div class="barra-trilho"><div class="barra barra-forte" data-valor="2300" data-max="2300"></div></div>
+                            <span class="barra-valor">R$ 2.300</span>
+                        </div>
+                    </div>
+                    <p class="grafico-nota">
+                        O maior prejuízo do produtor não é uma conta que chega: é o leite que nunca foi produzido.
+                        Num rebanho pequeno, cios perdidos por falta de registro passam de <strong>R$ 2 mil por ano</strong>,
+                        mais que o custo de qualquer ferramenta de gestão.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== A SOLUÇÃO ===== -->
+        <section class="secao" id="solucao">
+            <div class="container">
+                <span class="selo selo-verde">A solução</span>
+                <h2>Como a HerdTech resolve</h2>
+                <p class="lead">Três cadastros integrados — o MVP já está em funcionamento.</p>
+
+                <div class="passos">
+                    <article class="passo">
+                        <span class="passo-numero" aria-hidden="true">1</span>
+                        <h3>Produtor e Fazenda</h3>
+                        <p>Cadastro do cliente e da propriedade: a base de todo o sistema.</p>
+                    </article>
+                    <article class="passo">
+                        <span class="passo-numero" aria-hidden="true">2</span>
+                        <h3>Rebanho</h3>
+                        <p>Cada animal com identificação, nascimento e destino — leite, abate ou cruza — com histórico.</p>
+                    </article>
+                    <article class="passo">
+                        <span class="passo-numero" aria-hidden="true">3</span>
+                        <h3>Vacinação</h3>
+                        <p>Cada dose registrada com data e prazo da próxima. Fim do reforço esquecido.</p>
+                    </article>
+                </div>
+
+                <div class="recursos">
+                    <h3>O sistema permite</h3>
+                    <ul>
+                        <li>Cadastro de fazendas</li>
+                        <li>Cadastro de animais</li>
+                        <li>Controle de vacinação</li>
+                        <li>Relatórios</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RESULTADOS ===== -->
+        <section class="secao secao-clara" id="resultados">
+            <div class="container">
+                <span class="selo selo-verde">Resultados esperados</span>
+                <h2>Antes e depois da HerdTech</h2>
+
+                <div class="comparativo">
+                    <div class="coluna coluna-antes">
+                        <h3>Antes</h3>
+                        <ul>
+                            <li>Vacinas de reforço atrasadas</li>
+                            <li>Cios perdidos sem ninguém perceber</li>
+                            <li>Decisão de abate, leite ou cruza “no olho”</li>
+                            <li>Informação presa na memória de uma só pessoa</li>
+                        </ul>
+                    </div>
+                    <div class="coluna coluna-depois">
+                        <h3>Depois, com HerdTech</h3>
+                        <ul>
+                            <li>Próxima vacina calculada no cadastro</li>
+                            <li>Ciclos reprodutivos registrados</li>
+                            <li>Destino de cada animal baseado em histórico</li>
+                            <li>Família inteira com acesso ao rebanho</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PRÓXIMOS PASSOS ===== -->
+        <section class="secao" id="proximos">
+            <div class="container">
+                <span class="selo selo-verde">Próximos passos</span>
+                <h2>Uma dor real da nossa região</h2>
+                <p class="lead">
+                    Gado valioso sem ferramenta de gestão. O MVP valida o conceito bovino de leite,
+                    onde o produtor está mais sozinho.
+                </p>
+                <div class="caso-grade">
+                    <div class="cartao">
+                        <h3>Alertas e relatórios</h3>
+                        <p>Alertas automáticos de vacinação e relatórios de produtividade.</p>
+                    </div>
+                    <div class="cartao">
+                        <h3>Suinocultura</h3>
+                        <p>A mesma região é a maior produtora de suínos de SC: o mesmo problema, o mesmo caminho.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EQUIPE ===== -->
+        <section class="secao secao-escura" id="equipe">
+            <div class="container">
+                <span class="selo selo-claro">Quem faz</span>
+                <h2>Equipe</h2>
+                <ul class="equipe">
+                    <li><span class="avatar" aria-hidden="true">D</span>Douglas</li>
+                    <li><span class="avatar" aria-hidden="true">G</span>Guilherme</li>
+                    <li><span class="avatar" aria-hidden="true">J</span>Julia</li>
+                    <li><span class="avatar" aria-hidden="true">V</span>Vitor</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-grade">
+            <p><strong>HerdTech</strong> — Tecnologia para um rebanho mais produtivo.</p>
+            <p>Curso Técnico em Desenvolvimento de Sistemas · Programação de Aplicativos · SENAI Tubarão</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
